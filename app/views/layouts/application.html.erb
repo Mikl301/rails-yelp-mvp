@@ -12,6 +12,12 @@
   </head>
 
   <body>
-    <%= yield %>
+    <nav class="d-flex navbar-lewagon p-3 mb-3">
+      <%= link_to "All Restaurants", restaurants_path  %>
+      <%= link_to "Add a Restaurant", new_restaurant_path  %>
+    </nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>
